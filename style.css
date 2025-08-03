@@ -1,0 +1,92 @@
+body {
+    background-image: url('https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSBFdZ7VW9jrXa9OvO3zh4SwkXZwQlFNFFYQp0MAwoeMXJmIbOR9kmjzo4JwWLQujb3RRDZN6_XQj4POg9kZ1QMGQmUI4TFBn20oJ7IYKTFotzzj0A');
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(8px);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main-content {
+    display: flex;
+    gap: 30px;
+    align-items: stretch; /* Garante que os containers tenham a mesma altura */
+}
+
+.container {
+    width: 350px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ccc;
+}
+
+h1 {
+    color: #333;
+    margin-top: 10px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+}
+
+.link-list li {
+    margin-bottom: 15px;
+}
+
+.link-list a {
+    display: block;
+    padding: 15px 20px;
+    background-color: #40c144;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.link-list a:hover {
+    background-color: #0f6d2d;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+#counter-container {
+    position: fixed; /* Fixa o elemento na tela, mesmo com rolagem */
+    bottom: 20px; /* Distância da parte inferior */
+    right: 20px; /* Distância da direita */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    text-align: left;
+}
+
+#counter-container h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+#counter-container p {
+    margin: 5px 0;
+}
